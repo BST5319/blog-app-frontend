@@ -1,13 +1,13 @@
 import { createContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import useAxiosFetch from '../hooks/useAxiosFetch';
-
+const { REACT_APP_FRONTEND_URL } = process.env;
 const DataContext = createContext({});
 
 export const DataProvider = ({ children }) => {
 
     const [posts, setPosts] = useState([]);
-    const { data, fetchError, isLoading } = useAxiosFetch("http://localhost:4000/posts");
+    const { data, fetchError, isLoading } = useAxiosFetch(`${REACT_APP_FRONTEND_URL}/posts`);
 
     const [username, setUsername] = useState((prev) => {
         const user = localStorage.getItem("currentUser");
