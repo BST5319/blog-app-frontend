@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Login Form CSS */
+
+/* Signup CSS */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.signup-text {
+  font-size: medium;
+}
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #333131;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+.card-img-top {
+  height: 200px;
+}
+/* About Page CSS */
+.about-image {
+  width: 100%;
+  height: 250px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .post-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .post-column {
+    width: fit-content;
+  }
+  .post-card-body {
+    text-align: center;
+    padding: 20px 5px;
+  }
+  .postpage-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .login-form-container {
+    width: 300px;
+  }
+  .signup-form-container {
+    width: 300px;
+  }
+  .about-image {
+    width: 100%;
+    height: 200px;
+  }
+  .contact-form-container {
+    height: fit-content;
+  }
+  .contact-form-success {
+    height: fit-content;
+  }
+  .post-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .post-card-body {
+    text-align: center;
+    padding: 20px 5px;
+  }
+  .post-column {
+    width: fit-content;
+  }
+  .postpage-image {
+    width: 100%;
+    height: 300px;
+  }
+  .card-img-top {
+    width: 290px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .login-form-container {
+    width: 300px;
+  }
+  .signup-form-container {
+    width: 300px;
+  }
+  .card-img-top {
+    width: 300px;
+  }
+  .about-image {
+    width: 100%;
+    height: 200px;
+  }
+  .post-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .post-card-body {
+    text-align: center;
+    padding: 20px 5px;
+  }
+  .post-column {
+    width: fit-content;
+  }
+  .postpage-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .login-form-container {
+    width: 300px;
+  }
+  .form-box {
+    width: 300px;
+  }
+  .signup-form-container {
+    width: 300px;
+  }
+  .about-image {
+    width: 100%;
+    height: 300px;
+  }
+  .post-card {
+    display: flex;
+    justify-content: center;
+  }
+  .post-column {
+    width: 50%;
+  }
+  .post-card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px;
+    text-align: center;
+  }
+  .postpage-image {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .login-form-container {
+    width: 300px;
+    height: 300px;
+  }
+  .signup-form-container {
+    width: 300px;
+    height: 300px;
+  }
+  .about-image {
+    width: 100%;
+    height: 450px;
+  }
+  .post-card-body {
+    text-align: center;
+    padding: 20px 5px;
+  }
+  .postpage-image {
+    width: 80vw;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .login-form-container {
+    width: 300px;
+  }
+  .signup-form-container {
+    width: 300px;
+  }
+  .about-image {
+    width: 100%;
+    height: 500px;
+  }
+  .post-card-body {
+    text-align: center;
+    padding: 20px 5px;
+  }
+  .postpage-image {
+    width: 1000px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  .login-form-container {
+    width: 300px;
+  }
+  .signup-form-container {
+    width: 300px;
+  }
+  .post-card-body {
+    text-align: center;
+    padding: 20px 5px;
+  }
+  .about-image {
+    width: 100%;
+    height: 700px;
+  }
+  .postpage-image {
+    width: 1000px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .comment-container {
+    width: 800px;
+  }
+}
